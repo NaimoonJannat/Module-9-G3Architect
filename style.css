@@ -67,24 +67,26 @@ nav > ul >li > a{
     margin: 0px auto;
 }
 /* Album banner team  */
+main{
+    width: 70%;
+    margin: 85px auto;
+}
 .album-container{
     display: flex;
     align-items: center;
-    width: 70%;
-    margin: 85px auto;
-    gap: 75px;
+    gap: 4.5rem;
 }
 .album{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+    gap: 1.5rem;
 }
-.album-title{
+.primary-title{
     color: #131313;
     font-size: 45px;
     font-weight: 700;
 }
-.album-info{
+.primary-info{
     margin: 24px 0px;
     color: #727272;
     font-size: 16px;
@@ -97,6 +99,14 @@ nav > ul >li > a{
     color: #FF900E;
 }
 
+/* Featured section  */
+.featured{
+    display: flex;
+    margin-top: 150px;
+}
+
+
+
 
 
 /* Responsive for small screens  */
@@ -108,15 +118,24 @@ nav > ul >li > a{
     nav{
         flex-direction: column;
     }
+    .album-container{
+        flex-direction: column-reverse;
+    }
+    .album{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 
 /* Responsive for medium screens  */
 
-@media screen and (min-width: 576) and (max-width: 992px){
+@media screen and (min-width: 576px) and (max-width: 992px){
     header{
         padding: 20px;
     }
     nav{
         flex-direction: column;
+    }
+    .album-container{
+        flex-direction: column-reverse;
     }
 }
