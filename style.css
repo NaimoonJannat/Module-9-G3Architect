@@ -67,10 +67,6 @@ nav > ul >li > a{
     margin: 0px auto;
 }
 /* Album banner team  */
-main{
-    /* width: 70%;
-    margin: 85px auto; */
-}
 .album-container{
     width: 70%;
     margin: 85px auto;
@@ -127,8 +123,8 @@ hr{
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
     margin-bottom: 1.5rem;
 }
-.featured-img{
-    width: 50%;
+.featured-img>img{
+    height: 100%;
 }
 
 
@@ -210,6 +206,9 @@ footer{
     .sponsor-box > img{
         margin-bottom: 20px;
     }
+    .featured-img>img{
+        width: 100%;
+    }
 
 }
 
@@ -227,5 +226,8 @@ footer{
     }
     .sponsor-box > img{
         margin-bottom: 20px;
+    }
+    .featured-img>img{
+        width: 100%;
     }
 }
