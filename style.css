@@ -66,6 +66,37 @@ nav > ul >li > a{
     width: 100%;
     margin: 0px auto;
 }
+/* Album banner team  */
+.album-container{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: 85px auto;
+    gap: 75px;
+}
+.album{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+.album-title{
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+.album-info{
+    margin: 24px 0px;
+    color: #727272;
+    font-size: 16px;
+}
+.grey{
+    color: #727272;
+    font-weight: 500;
+}
+.orange{
+    color: #FF900E;
+}
+
 
 
 /* Responsive for small screens  */
